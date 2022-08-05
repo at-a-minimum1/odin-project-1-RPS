@@ -1,0 +1,91 @@
+* {
+	background-color: darkturquoise;
+}
+.scoreDiv > * {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: monospace;
+	background-color: deepskyblue;
+	/* max-height: 800px; */
+	min-height: 100px;
+}
+.wrappingDiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: none;
+	/* min-height: 400px; */
+	/* padding-left: 20%; */
+}
+
+.choiceDiv {
+	display: flex;
+	justify-content: left;
+	flex-flow: column nowrap;
+	font-family: monospace;
+	/* padding-right: 40%; */
+	/* min-width: 800px; */
+	padding-right: 10%;
+	padding-left: 3%;
+	min-height: 320px;
+}
+
+.resultDiv > * {
+	display: flex;
+	font-family: monospace;
+	justify-content: center;
+	/* border: solid; */
+	/* border-color: aliceblue; */
+	/* max-width: 700px; */
+	/* padding-left: 5%; */
+	background-color: black;
+	color: cyan;
+}
+#result {
+	background-color: black;
+}
+button {
+	color: aliceblue;
+	background-color: darkblue;
+	font-size: xx-large;
+	font-family: monospace;
+	font-weight: 800;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	/* border: solid; */
+	/* border-color: cyan; */
+	border-radius: 25px;
+	max-width: 400px;
+}
+.buttonDiv {
+	/* border: solid; */
+	/* border-color: blue; */
+	display: flex;
+	gap: 35px;
+	/* justify-content: space-around; */
+
+	flex-flow: column nowrap;
+	justify-content: left;
+}
+@media (max-width: 500px) {
+	.buttonDiv {
+		flex-flow: row wrap;
+	}
+	.wrappingDiv > * {
+		font-size: small;
+		flex-flow: column wrap;
+	}
+	button {
+		font-size: large;
+		border-radius: 100%;
+		height: 120px;
+		width: 120px;
+		padding: 0;
+	}
+	.resultDiv {
+		padding-right: 2%;
+		min-height: 100px;
+	}
+}

@@ -60,7 +60,7 @@ function generateResult() {
 		userScore++;
 		if (userScore > 4) {
 			resetGame();
-			return "You Win the Game!";
+			return "<br> You Win the Game!";
 		}
 		return "You Win!";
 	}
@@ -91,7 +91,13 @@ function generateResult() {
 	}
 }
 function generateScore() {
-	return "Computer Score: " + computerScore + " User Score: " + userScore;
+	return (
+		"Computer Score: " +
+		computerScore +
+		"/5 <br> User Score: " +
+		userScore +
+		"/5"
+	);
 }
 
 function resetGame() {

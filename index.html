@@ -8,21 +8,41 @@
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<h2 id="score">Computer Score: 0 User Score: 0</h2>
-		<h1>
-			Computer Choice:
-			<span id="computer-choice"></span>
-		</h1>
-		<h1>Your Choice: <span id="user-choice"></span></h1>
+		<div class="scoreDiv">
+			<h2 id="score">
+				Computer Score: 0/5
+				<br />
+				User Score: 0/5
+			</h2>
+		</div>
+		<div class="wrappingDiv">
+			<div class="choiceDiv">
+				<h1>
+					Computer Choice:
+					<br />
+					<span id="computer-choice"></span>
+				</h1>
+				<br />
+				<h1>
+					Your Choice:
+					<br />
+					<span id="user-choice"></span>
+				</h1>
+			</div>
 
-		<h1>
-			Result:
-			<span id="result"></span>
-		</h1>
+			<div class="buttonDiv">
+				<button id="rock">Rock</button>
+				<button id="paper">Paper</button>
+				<button id="scissors">Scissors</button>
+			</div>
+		</div>
 
-		<button id="rock">Rock</button>
-		<button id="paper">Paper</button>
-		<button id="scissors">Scissors</button>
+		<div class="resultDiv">
+			<h1>
+				Result: &nbsp
+				<span id="result"></span>
+			</h1>
+		</div>
 
 		<script src="app.js"></script>
 	</body>
